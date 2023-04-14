@@ -2,7 +2,7 @@
 .DS_Store
 
 # IntelliJ
-.idea/*
+../codeup-java-exercises2/.idea/*
 *.iml
 
 # Compiled output
