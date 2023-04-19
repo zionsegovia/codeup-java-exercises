@@ -19,7 +19,7 @@ public class GradesApplication {
         students.get("coolguy").addGrade(95);
 
         students.get("monkeyLover").addGrade(90);
-        students.get("monkeyLover").addGrade(95);
+        students.get("monkeyLover").addGrade(37);
         students.get("monkeyLover").addGrade(99);
 
         students.get("bugeater").addGrade(35);
