@@ -9,46 +9,45 @@ public class GradesApplication {
         Scanner scanner = new Scanner(System.in);
 
         HashMap<String, Student> students = new HashMap<>();
-        students.put("zgulde", new Student("Zach"));
-        students.put("ryanorsinger", new Student("Ryan"));
-        students.put("jreich5", new Student("Jeremy"));
-        students.put("fmendozaro", new Student("Fernando"));
+        students.put("coolguy", new Student("Doug"));
+        students.put("monkeyLover", new Student("Frenchguy"));
+        students.put("bugeater", new Student("Bro"));
+        students.put("frogEnjoyer", new Student("Fernando"));
 
-        students.get("zgulde").addGrade(95);
-        students.get("zgulde").addGrade(90);
-        students.get("zgulde").addGrade(85);
+        students.get("coolguy").addGrade(95);
+        students.get("coolguy").addGrade(90);
+        students.get("coolguy").addGrade(95);
 
-        students.get("ryanorsinger").addGrade(80);
-        students.get("ryanorsinger").addGrade(85);
-        students.get("ryanorsinger").addGrade(90);
+        students.get("monkeyLover").addGrade(90);
+        students.get("monkeyLover").addGrade(95);
+        students.get("monkeyLover").addGrade(99);
 
-        students.get("jreich5").addGrade(70);
-        students.get("jreich5").addGrade(75);
-        students.get("jreich5").addGrade(80);
+        students.get("bugeater").addGrade(35);
+        students.get("bugeater").addGrade(65);
+        students.get("bugeater").addGrade(80);
 
-        students.get("fmendozaro").addGrade(90);
-        students.get("fmendozaro").addGrade(92);
-        students.get("fmendozaro").addGrade(94);
+        students.get("frogEnjoyer").addGrade(90);
+        students.get("frogEnjoyer").addGrade(92);
+        students.get("frogEnjoyer").addGrade(94);
 
         String choice;
         do {
-            System.out.println("Welcome!\n");
+            System.out.println("Hi Friend!\n");
             System.out.println("Here are the GitHub usernames of our students:\n");
             for (String username : students.keySet()) {
                 System.out.print("|" + username + "| ");
             }
             System.out.println("\n");
 
-            System.out.println("What student would you like to see more information on?");
+            System.out.println("What student would you like to see more information about?");
             String username = scanner.nextLine();
 
             Student student = students.get(username);
             if (student == null) {
-                System.out.println("\nSorry, no student found with the GitHub username of \"" + username + "\".\n");
+                System.out.println("\nSorry man, no student was found with the GitHub username of \"" + username + "\".\n");
             } else {
                 System.out.println("\nName: " + student.getName());
                 System.out.println("GitHub Username: " + username);
-                System.out.println("Grades: " + student.getGradeAverage());
                 System.out.println("Current Average: " + student.getGradeAverage() + "\n");
             }
 
