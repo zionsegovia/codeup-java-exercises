@@ -61,4 +61,6 @@ public class Input {
         }
         return scanner.nextDouble();
     }
+
 }
+

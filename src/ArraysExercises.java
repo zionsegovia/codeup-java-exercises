@@ -18,9 +18,9 @@ public class ArraysExercises {
 
      Person brooke = new Person("Brooke");
 
-        Person[] newPersonArray = ArraysExercises.addPerson(people, brooke);
+        Person[] newPersonArray = addPerson(people, brooke);
         for (Person person : newPersonArray){
-            System.out.println(people);
+            System.out.println(person.getName());
         }
 
     }
